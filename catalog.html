@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -18,7 +19,6 @@
         </ul>
         <ul>
           <li>
-            <img src="img/index/cart.png" width="14" height="13" alt="Тележка">
             <button type="button">Корзина</button>
           </li>
         </ul>
@@ -28,7 +28,64 @@
     <main>
       <!--шапка фильтра-->
       <section class="">
-        <h2 class="">Фильтр шаблонов</h2>
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form>
+          <p>Сетка:</p>
+          <ul>
+          <li>
+            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">
+              Адаптивный
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="grid" value="fixed" id="filter-fixed">
+            <label for="filter-fixed">
+              Фиксированный
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="grid" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">
+              Резиновый
+            </label>
+          </li>
+          </ul>
+          <p>Особенности:</p>
+          <ul>
+          <li>
+            <input type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">
+              Слайдер
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="advantages" id="filter-advantages">
+            <label for="filter-advantages">
+              Блок преимуществ
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">
+              Новости
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">
+              Галерея
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">
+              Корзина
+            </label>
+          </li>
+          </ul>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <h2 class="">Список шаблонов</h2>
@@ -46,9 +103,9 @@
     <footer>
       <div>
         <ul>
-          <li><a href="https://vk.com/"><img src="img/index/vk-icon.png" width="50" height="50" alt="VK"></a></li>
-          <li><a href="https://facebook.com/"><img src="img/index/fb-icon.png" width="50" height="50" alt="FB"></a></li>
-          <li><a href="https://www.instagram.com/"><img src="img/index/insta-icon.png" width="50" height="50" alt="INSTA"></a></li>
+          <li><a href="https://vk.com/"><img src="img/index/vk-icon.svg" width="50" height="50" alt="VK"></a></li>
+          <li><a href="https://facebook.com/"><img src="img/index/fb-icon.svg" width="50" height="50" alt="FB"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="img/index/insta-icon.svg" width="50" height="50" alt="INSTA"></a></li>
         </ul>
       </div>
       <p>Давайте дружить, это выгодно!</p>
